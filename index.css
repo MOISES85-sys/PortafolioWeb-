@@ -1,0 +1,73 @@
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+}
+
+header {
+    background: #007bff;
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: space-between; /* Espacio entre elementos */
+    padding: 20px; /* Espaciado interno */
+}
+
+footer {
+    background: #343a40;
+    margin-top: auto; /* Empuja el footer hacia abajo */
+}
+
+.card {
+    transition: transform 0.2s; /* Animación suave */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumentar tamaño al pasar el mouse */
+}
+
+#current-time {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.skill-item {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 20px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    color: black; /* Cambiar color a negro */
+    width: 5%; /* Ajustar el ancho de las flechas */
+}
+
+.carousel-control-prev {
+    left: 0; /* Posicionar a la izquierda */
+}
+
+.carousel-control-next {
+    right: 0; /* Posicionar a la derecha */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black; /* Fondo negro para las flechas */
+    border-radius: 50%; /* Opcional: hacer las flechas redondeadas */
+}
+
+@media (max-width: 768px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 10%; /* Aumentar el ancho en pantallas pequeñas */
+    }
+}
+
+/* Estilo para la imagen del header */
+.header-image {
+    width: 100px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantener la proporción */
+    border-radius: 50%; /* Hacer la imagen redonda */
+}
